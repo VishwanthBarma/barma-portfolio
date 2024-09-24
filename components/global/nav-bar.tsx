@@ -1,10 +1,10 @@
 "use client"
-import { NavBarMenu } from "@/constants/nav-bar-menu"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import React from "react"
 import Image from "next/image"
+import { NavBarMenu } from "@/constants/nav-bar-menu"
 
 const NavBar = () => {
     const pathname = usePathname()
@@ -16,7 +16,7 @@ const NavBar = () => {
         >
             <div className="flex items-center container justify-between">
                 <Link href={"/"} className="font-bold text-2xl w-2/12">
-                    Barma's Portfolio
+                    BARMA
                 </Link>
 
                 <div className="bg-neutral-800/70 p-1 rounded-lg flex items-center space-x-1 justify-between border-[2px] border-zinc-800/70">
@@ -32,9 +32,10 @@ const NavBar = () => {
                                     isActive
                                         ? "bg-neutral-950 shadow-md shadow-neutral-950/50"
                                         : "hover:bg-neutral-900 text-neutral-500 hover:text-neutral-400"
-                                } p-2 rounded-lg text-center text-sm font-medium`}
+                                } p-2 rounded-lg text-center text-sm font-medium flex items-center space-x-2`}
                                 href={menuItem.path}
                             >
+                                <span className="mr-1">{menuItem.icon}</span>
                                 {menuItem.label}
                             </Link>
                         )
