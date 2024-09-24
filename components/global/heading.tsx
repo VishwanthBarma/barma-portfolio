@@ -9,7 +9,7 @@ type Props = {
 const Heading = ({ children }: Props) => {
     return (
         <BackdropGradient className="w-28 h-20 opacity-50 -top-10">
-            <TextWhiteGradient className="font-bold text-5xl z-10">
+            <TextWhiteGradient className="font-bold h-20 text-5xl z-10">
                 {children}
             </TextWhiteGradient>
         </BackdropGradient>

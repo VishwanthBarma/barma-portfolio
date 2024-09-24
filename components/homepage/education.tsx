@@ -4,7 +4,7 @@ import GlassCard from "../global/glass-card"
 
 const Education = () => {
     return (
-        <div className="flex flex-col space-y-5">
+        <div className="flex flex-col">
             <Heading>Education</Heading>
             <GlassCard className="w-min min-w-fit">
                 <div className="flex flex-col space-y-5 w-full text-neutral-300">

@@ -7,6 +7,7 @@ import TextColorGradient from "../global/text-color-gradient"
 import { HoverBorderGradient } from "../ui/hover-border-gradient"
 import { FileDown } from "lucide-react"
 import * as motion from "framer-motion/client"
+import { SparklesCore } from "../ui/sparkles"
 
 const HeroSection = () => {
     const handleDownloadResume = (
@@ -16,7 +17,7 @@ const HeroSection = () => {
     }
 
     return (
-        <div>
+        <div className="pt-32">
             <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}

@@ -4,7 +4,7 @@ import HeroSection from "@/components/homepage/hero-section"
 
 export default function Home() {
     return (
-        <div className="pt-32 flex flex-col space-y-40">
+        <div className="flex flex-col space-y-40">
             <HeroSection />
             <AboutMeSection />
             <Education />

@@ -24,7 +24,7 @@ export default function RootLayout({
                     defaultTheme="dark"
                     disableTransitionOnChange
                 >
-                    <div className="flex flex-col container">
+                    <div className="flex flex-col container mx-auto">
                         <NavBar />
                         <div className="container py-28">{children}</div>
                     </div>
