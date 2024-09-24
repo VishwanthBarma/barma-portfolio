@@ -26,7 +26,7 @@ export default function RootLayout({
                 >
                     <div className="flex flex-col container">
                         <NavBar />
-                        <div className="container pt-28">{children}</div>
+                        <div className="container py-28">{children}</div>
                     </div>
                 </ThemeProvider>
             </body>

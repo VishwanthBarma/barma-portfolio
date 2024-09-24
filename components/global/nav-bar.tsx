@@ -15,7 +15,10 @@ const NavBar = () => {
             )}
         >
             <div className="flex items-center container justify-between">
-                <Link href={"/"} className="font-bold text-2xl w-2/12">
+                <Link
+                    href={"/"}
+                    className="font-bold text-2xl w-2/12 text-emerald-500"
+                >
                     BARMA
                 </Link>
 
@@ -48,7 +51,7 @@ const NavBar = () => {
                         height={45}
                         src={"/avatar/avatar.jpg"}
                         alt="Barma's Image"
-                        className="rounded-full border-2 border-zinc-800"
+                        className="rounded-full border-2 border-emerald-500"
                     />
                 </div>
             </div>
