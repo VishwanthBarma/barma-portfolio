@@ -19,7 +19,7 @@ const NavBar = () => {
                     Barma's Portfolio
                 </Link>
 
-                <div className="bg-neutral-800/70 p-1 rounded-lg flex items-center space-x-1 justify-between">
+                <div className="bg-neutral-800/70 p-1 rounded-lg flex items-center space-x-1 justify-between border-[2px] border-zinc-800/70">
                     {NavBarMenu.map((menuItem) => {
                         const isActive =
                             menuItem.id === 0
