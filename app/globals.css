@@ -90,3 +90,81 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes blur-in {
+  from {
+    filter: blur(3px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+
+@keyframes blur-out {
+  from {
+    filter: blur(0);
+  }
+  to {
+    filter: blur(3px);
+  }
+}
+
+.transition-filter {
+  transition: filter 0.4s ease-in-out;
+}
+
+.blur-in {
+  animation: blur-in 0.7s forwards;
+}
+
+.blur-out {
+  animation: blur-out 0.4s forwards;
+}
+
+.radial {
+  background-image: radial-gradient(
+    ellipse farthest-side,
+    white,
+    #716768,
+    black
+  );
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.text-radial {
+  background-image: radial-gradient(
+    ellipse farthest-side,
+    rgba(113, 103, 104, 0.2) 30%,
+    black 70%
+  );
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.text-radial--circle {
+  background-image: radial-gradient(
+    circle farthest-side,
+    rgba(113, 103, 104, 0.35) 20%,
+    black 70%
+  );
+  background-size: 50% 70%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.backdrop--blur__safari {
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.radial--blur {
+  -webkit-backdrop-filter: blur(100px);
+  filter: blur(100px);
+  background: #877874;
+}
+
+.radial--blur2 {
+  -webkit-backdrop-filter: blur(100px);
+  filter: blur(100px);
+  background: #414442;
+}
