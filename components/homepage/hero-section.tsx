@@ -7,7 +7,6 @@ import TextColorGradient from "../global/text-color-gradient"
 import { HoverBorderGradient } from "../ui/hover-border-gradient"
 import { FileDown } from "lucide-react"
 import * as motion from "framer-motion/client"
-import { SparklesCore } from "../ui/sparkles"
 
 const HeroSection = () => {
     const handleDownloadResume = (
