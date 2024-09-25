@@ -9,9 +9,20 @@ import GlassCard from "@/components/global/glass-card"
 const ExperiencePage = () => {
     return (
         <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{
+                opacity: 0,
+                scale: 0.8,
+                filter: "blur(10px)",
+            }}
+            animate={{
+                opacity: 1,
+                scale: 1,
+                filter: "blur(0px)",
+            }}
+            transition={{
+                duration: 1.2,
+                ease: [0.4, 0, 0.2, 1],
+            }}
             className="px-10"
         >
             <Heading>Technical Experience</Heading>
@@ -25,14 +36,14 @@ const ExperiencePage = () => {
                             {item.title}
                         </TextColorGradient>
 
-                        <div className="flex space-x-3 items-center mb-3">
+                        <div className="flex flex-col md:flex-row md:space-x-3 items-center mb-3">
                             <h1 className="font-bold text-xl">
                                 {item.employee}
                             </h1>
-                            <TextColorGradient className="font-extrabold text-xl w-fit">
+                            <TextColorGradient className="font-extrabold text-xl">
                                 {item.duration}
                             </TextColorGradient>
-                            <h1 className="">{item.location}</h1>
+                            <h1 className="font-semibold">{item.location}</h1>
                         </div>
                         <GlassCard className="text-neutral-400 xl:w-2/3">
                             {item.content}

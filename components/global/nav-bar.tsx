@@ -11,7 +11,7 @@ const NavBar = () => {
     return (
         <div
             className={cn(
-                "fixed top-0 inset-x-0 container z-50 flex items-center bg-neutral-950/50 backdrop-blur-md px-6 py-3 pt-5 border-b-2 border-zinc-950 shadow-md shadow-zinc-900/50",
+                "fixed top-0 inset-x-0 container z-50 flex items-center bg-black/30 backdrop-blur-md px-6 py-3 pt-5 border-b-2 border-zinc-950 shadow-md shadow-zinc-900/50",
             )}
         >
             <div className="flex items-center container justify-between">
@@ -22,7 +22,7 @@ const NavBar = () => {
                     BARMA
                 </Link>
 
-                <div className="bg-neutral-800/70 p-1 rounded-lg flex items-center space-x-1 justify-between border-[2px] border-zinc-950/70">
+                <div className="bg-neutral-800/80 p-1 rounded-lg flex items-center space-x-1 justify-between border-[2px] border-zinc-950/70">
                     {NavBarMenu.map((menuItem) => {
                         const isActive =
                             menuItem.id === 0

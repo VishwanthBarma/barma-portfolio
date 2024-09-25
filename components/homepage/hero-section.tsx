@@ -7,6 +7,7 @@ import TextColorGradient from "../global/text-color-gradient"
 import { HoverBorderGradient } from "../ui/hover-border-gradient"
 import { FileDown } from "lucide-react"
 import * as motion from "framer-motion/client"
+import Resume3DCard from "./resume-3d-card"
 
 const HeroSection = () => {
     const handleDownloadResume = (
@@ -16,11 +17,22 @@ const HeroSection = () => {
     }
 
     return (
-        <div className="pt-32">
+        <div className="pt-20 xl:pt-10 xl:flex items-center justify-evenly">
             <motion.div
-                initial={{ opacity: 0, y: -50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
+                initial={{
+                    opacity: 0,
+                    scale: 0.8,
+                    filter: "blur(10px)",
+                }}
+                animate={{
+                    opacity: 1,
+                    scale: 1,
+                    filter: "blur(0px)",
+                }}
+                transition={{
+                    duration: 1.2,
+                    ease: [0.4, 0, 0.2, 1],
+                }}
             >
                 <BackdropGradient className="h-20 w-60 opacity-60">
                     <TextWhiteGradient className="text-6xl font-semibold mb-2">
@@ -55,6 +67,24 @@ const HeroSection = () => {
                         </HoverBorderGradient>
                     </div>
                 </BackdropGradient>
+            </motion.div>
+            <motion.div
+                initial={{
+                    opacity: 0,
+                    scale: 0.8,
+                    filter: "blur(10px)",
+                }}
+                animate={{
+                    opacity: 1,
+                    scale: 1,
+                    filter: "blur(0px)",
+                }}
+                transition={{
+                    duration: 1.2,
+                    ease: [0.4, 0, 0.2, 1],
+                }}
+            >
+                <Resume3DCard />
             </motion.div>
         </div>
     )
