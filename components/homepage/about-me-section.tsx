@@ -6,7 +6,7 @@ const AboutMeSection = () => {
     return (
         <div className="flex flex-col w-full">
             <Heading>About Me</Heading>
-            <GlassCard className="w-2/4">
+            <GlassCard className="max-w-1/2 w-1/2">
                 <p className="text-center text-neutral-500">
                     I am an active and experienced Software Engineer expertised
                     in Full Stack Developement with a strong foundation in web
