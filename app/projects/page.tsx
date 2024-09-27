@@ -41,6 +41,7 @@ const ProjectsPage = () => {
                     duration: 1.2,
                     ease: [0.4, 0, 0.2, 1],
                 }}
+                className="w-full"
             >
                 <Timeline data={projects} />
             </motion.div>
