@@ -18,6 +18,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <head>
+                <link rel="icon" href="/favicon.ico" />
+                <link rel="apple-touch-icon" href="/favicon.ico" />
+            </head>
             <body className={jakarta.className}>
                 <ThemeProvider
                     attribute="class"
