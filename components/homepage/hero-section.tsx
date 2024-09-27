@@ -1,21 +1,14 @@
-"use client"
 import React from "react"
 import BackdropGradient from "../global/backdrop-gradient"
 import TextWhiteGradient from "../global/text-white-gradient"
 import { FlipWords } from "../ui/flip-words"
 import TextColorGradient from "../global/text-color-gradient"
 import { HoverBorderGradient } from "../ui/hover-border-gradient"
-import { FileDown, Github } from "lucide-react"
+import { FileDown } from "lucide-react"
 import * as motion from "framer-motion/client"
 import Resume3DCard from "./resume-3d-card"
 
 const HeroSection = () => {
-    const handleDownloadResume = (
-        e: React.MouseEvent<HTMLElement, MouseEvent>,
-    ) => {
-        e.preventDefault()
-    }
-
     return (
         <div className="pt-20 xl:pt-10 xl:flex items-center justify-evenly">
             <motion.div
@@ -58,9 +51,10 @@ const HeroSection = () => {
                     <div className="mt-4">
                         <HoverBorderGradient
                             containerClassName="rounded-full"
-                            as="button"
+                            as="a"
                             className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-                            onClick={(e) => handleDownloadResume(e)} // Move the onClick here
+                            href="/Vishwanth_Barma_Resume.pdf"
+                            download="Vishwanth_Barma_Resume.pdf"
                         >
                             <FileDown size={18} />
                             <span className="font-medium">Download Resume</span>

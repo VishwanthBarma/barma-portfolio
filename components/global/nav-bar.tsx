@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation"
 import React from "react"
 import Image from "next/image"
 import { NavBarMenu } from "@/constants/nav-bar-menu"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 
 const NavBar = () => {
     const pathname = usePathname()
@@ -45,7 +46,13 @@ const NavBar = () => {
                     })}
                 </div>
 
-                <div className="w-2/12 flex justify-end">
+                <div className="w-2/12 flex justify-end items-center space-x-3">
+                    <Link href="https://github.com/VishwanthBarma">
+                        <FaGithub size={20} />
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/vishwanthbarma/">
+                        <FaLinkedin size={20} />
+                    </Link>
                     <Image
                         width={45}
                         height={45}
