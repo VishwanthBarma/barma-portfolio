@@ -168,3 +168,9 @@ body {
   filter: blur(100px);
   background: #414442;
 }
+
+.radial--blur3 {
+  -webkit-backdrop-filter: blur(100px);
+  filter: blur(100px);
+  background: #279f7f;
+}

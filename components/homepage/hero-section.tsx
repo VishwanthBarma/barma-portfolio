@@ -5,7 +5,7 @@ import TextWhiteGradient from "../global/text-white-gradient"
 import { FlipWords } from "../ui/flip-words"
 import TextColorGradient from "../global/text-color-gradient"
 import { HoverBorderGradient } from "../ui/hover-border-gradient"
-import { FileDown } from "lucide-react"
+import { FileDown, Github } from "lucide-react"
 import * as motion from "framer-motion/client"
 import Resume3DCard from "./resume-3d-card"
 
@@ -50,10 +50,10 @@ const HeroSection = () => {
                     </TextWhiteGradient>
                     <TextWhiteGradient className="mt-6 text-2xl font-medium text-center">
                         A Showcase of Innovation, Code, and Passion for
-                        <TextColorGradient className="font-extrabold">
-                            Software Development Engineering
-                        </TextColorGradient>
                     </TextWhiteGradient>
+                    <TextColorGradient className="font-extrabold text-2xl w-fit">
+                        Software Development Engineering
+                    </TextColorGradient>
 
                     <div className="mt-4">
                         <HoverBorderGradient
