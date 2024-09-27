@@ -22,7 +22,7 @@ const AchievementsPage = () => {
                     ease: [0.4, 0, 0.2, 1],
                 }}
             >
-                <Heading>Acheivements</Heading>
+                <Heading>Achievements</Heading>
             </motion.div>
 
             <motion.div

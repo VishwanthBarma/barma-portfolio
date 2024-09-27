@@ -40,8 +40,8 @@ export const NavBarMenu: NavBarMenuProps[] = [
     },
     {
         id: 4,
-        label: "Acheivements",
-        path: "/acheivements",
+        label: "Achievements",
+        path: "/achievements",
         icon: <FileClock size={16} />,
     },
 ]
