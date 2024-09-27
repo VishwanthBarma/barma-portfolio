@@ -3,7 +3,7 @@ import React from "react"
 
 type Props = {
     children: React.ReactNode
-    className?: String
+    className?: string
 }
 
 const TextColorGradient = ({ children, className }: Props) => {

@@ -53,7 +53,7 @@ export function HoverBorderGradient<T extends React.ElementType = "button">({
             }, duration * 1000)
             return () => clearInterval(interval)
         }
-    }, [hovered, duration, clockwise])
+    }, [hovered, duration, clockwise, rotateDirection])
 
     const TagComponent = as || "button" // Default to "button" if `as` is not provided
 

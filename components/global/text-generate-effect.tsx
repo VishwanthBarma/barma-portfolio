@@ -18,7 +18,7 @@ export const TextGenerateEffect = ({
     loopDuration?: number // Duration of one complete loop
 }) => {
     const [scope, animate] = useAnimate()
-    let wordsArray = words.split(" ")
+    const wordsArray = words.split(" ")
     const [animationKey, setAnimationKey] = useState(Date.now()) // Key to trigger re-render
 
     useEffect(() => {
