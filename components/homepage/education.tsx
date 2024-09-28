@@ -42,7 +42,7 @@ const Education = () => {
                             Location
                         </h1>
                         <h1 className="font-semibold border-[1px] p-2 px-3 rounded-xl w-fit">
-                            Hyderabad, Telangana
+                            Hyderabad, Telangana, 500075
                         </h1>
                     </div>
                 </div>

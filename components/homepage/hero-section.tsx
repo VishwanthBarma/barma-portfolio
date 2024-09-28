@@ -7,6 +7,7 @@ import { HoverBorderGradient } from "../ui/hover-border-gradient"
 import { FileDown } from "lucide-react"
 import * as motion from "framer-motion/client"
 import Resume3DCard from "./resume-3d-card"
+import { cn } from "@/lib/utils"
 
 const HeroSection = () => {
     return (
@@ -28,12 +29,12 @@ const HeroSection = () => {
                 }}
             >
                 <BackdropGradient className="h-20 w-60 opacity-60">
-                    <TextWhiteGradient className="text-6xl font-semibold mb-2">
+                    <TextWhiteGradient className="md:text-6xl text-3xl font-semibold mb-2">
                         Welcome to My Portfolio
                     </TextWhiteGradient>
                     <TextWhiteGradient>
                         <FlipWords
-                            className="font-medium text-2xl"
+                            className="font-medium md:text-2xl text-xl"
                             words={[
                                 "Explore My Work",
                                 "Discover My Latest Projects",
@@ -41,11 +42,16 @@ const HeroSection = () => {
                             ]}
                         />
                     </TextWhiteGradient>
-                    <TextWhiteGradient className="mt-6 text-2xl font-medium text-center">
+                    <TextWhiteGradient className="mt-6 md:text-2xl text-lg font-medium text-center">
                         A Showcase of Innovation, Code, and Passion for
                     </TextWhiteGradient>
-                    <TextColorGradient className="font-extrabold text-2xl w-fit">
+                    <TextColorGradient className="font-extrabold md:text-3xl text-xl w-fit">
                         Software Development Engineering
+                        <div
+                            className={cn(
+                                "absolute rounded-full radial--blur3 -z-10 w-48 h-12 -top-5 left-1/2 transform -translate-x-1/2 opacity-80",
+                            )}
+                        />
                     </TextColorGradient>
 
                     <div className="mt-4">

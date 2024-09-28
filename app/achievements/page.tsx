@@ -40,7 +40,7 @@ const AchievementsPage = () => {
                     duration: 1.2,
                     ease: [0.4, 0, 0.2, 1],
                 }}
-                className="px-20 pt-10 text-neutral-300 font-semibold flex flex-col space-y-10 xl:w-2/3"
+                className="md:px-20 px-10 pt-10 text-neutral-300 font-semibold flex flex-col space-y-10 xl:w-2/3"
             >
                 <div className="flex flex-col space-y-3">
                     <h1>
@@ -55,7 +55,7 @@ const AchievementsPage = () => {
                     </h1>
                 </div>
                 <div className="flex flex-col space-y-3">
-                    <TextColorGradient className="w-fit text-4xl">
+                    <TextColorGradient className="w-fit text-4xl font-bold">
                         Publications
                     </TextColorGradient>
                     <h1 className="">
@@ -79,7 +79,7 @@ const AchievementsPage = () => {
                     </h1>
                 </div>
                 <div className="flex flex-col space-y-3">
-                    <TextColorGradient className="w-fit text-4xl">
+                    <TextColorGradient className="w-fit text-4xl font-bold">
                         Certificates
                     </TextColorGradient>
                     <h1>

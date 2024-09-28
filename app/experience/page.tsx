@@ -25,7 +25,7 @@ const ExperiencePage = () => {
                     ease: [0.4, 0, 0.2, 1],
                 }}
             >
-                <Heading>Technical Experience</Heading>
+                <Heading>Experience</Heading>
             </motion.div>
 
             <motion.div

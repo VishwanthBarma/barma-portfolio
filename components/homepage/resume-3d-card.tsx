@@ -6,8 +6,11 @@ import { TypewriterEffectSmooth } from "../global/typewritter-effect"
 const Resume3DCard = () => {
     return (
         <div>
-            <CardContainer className="inter-var w-[24rem]">
-                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-4 border">
+            <CardContainer className="inter-var w-[24rem] relative group">
+                <CardBody className="bg-gray-50 relative group/card shadow-2xl shadow-neutral-500/[0.2]  dark:hover:shadow-2xl dark:hover:shadow-neutral-400/[0.2] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-4 border">
+                    <span className="absolute top-0 left-[1.125rem] h-[2px] w-[calc(100%-2.25rem)] bg-gradient-to-r from-neutral-400/0 via-white/85 to-neutral-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
+                    <span className="absolute opacity-0 bottom-0 left-[1.125rem] h-[2px] w-[calc(100%-2.25rem)] bg-gradient-to-r from-neutral-400/0 via-white/85 to-neutral-400/0 transition-opacity duration-500 group-hover:opacity-100"></span>
+
                     <div className="flex items-end justify-between">
                         <div className="text-[5px]">
                             <CardItem>+91 9441972666</CardItem>
@@ -27,7 +30,7 @@ const Resume3DCard = () => {
                             <CardItem>LinkedIn: VishwanthBarma</CardItem>
                         </div>
                     </div>
-                    <hr className="my-1 h-[2px] bg-white rounded-full"></hr>
+                    <hr className="my-1 h-[2px] bg-neutral-500 rounded-full"></hr>
                     <div>
                         <CardItem className="font-semibold text-[10px]">
                             Education

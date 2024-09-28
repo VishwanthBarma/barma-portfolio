@@ -12,7 +12,7 @@ import SkillsTag from "@/components/global/skills-tag"
 
 const SkillsPage = () => {
     return (
-        <div className="px-20 xl:px-40">
+        <div className="md:px-20 px-10 xl:px-40">
             <motion.div
                 initial={{
                     opacity: 0,
@@ -50,7 +50,7 @@ const SkillsPage = () => {
                 className="flex flex-col space-y-10 pt-10"
             >
                 <div className="flex flex-col space-y-4">
-                    <TextColorGradient className="w-fit font-bold text-3xl">
+                    <TextColorGradient className="w-fit font-bold text-4xl">
                         Technical Skills
                     </TextColorGradient>
                     <div className="flex flex-wrap gap-2">
@@ -61,7 +61,7 @@ const SkillsPage = () => {
                 </div>
 
                 <div className="flex flex-col space-y-4">
-                    <TextColorGradient className="w-fit font-bold text-3xl">
+                    <TextColorGradient className="w-fit font-bold text-4xl">
                         Web Development
                     </TextColorGradient>
                     <div className="flex flex-wrap gap-2">
@@ -72,7 +72,7 @@ const SkillsPage = () => {
                 </div>
 
                 <div className="flex flex-col space-y-4">
-                    <TextColorGradient className="w-fit font-bold text-3xl">
+                    <TextColorGradient className="w-fit font-bold text-4xl">
                         Course Work
                     </TextColorGradient>
                     <div className="flex flex-wrap gap-2">
@@ -83,7 +83,7 @@ const SkillsPage = () => {
                 </div>
 
                 <div className="flex flex-col space-y-4">
-                    <TextColorGradient className="w-fit font-bold text-3xl">
+                    <TextColorGradient className="w-fit font-bold text-4xl">
                         Soft Skills
                     </TextColorGradient>
                     <div className="flex flex-wrap gap-2">

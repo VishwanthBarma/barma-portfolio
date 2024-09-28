@@ -65,7 +65,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                                             "absolute rounded-[50%] radial--blur -z-10 h-20 w-40 top-0",
                                         )}
                                     />
-                                    <TextColorGradient className="font-bold text-3xl w-fit">
+                                    <TextColorGradient className="font-bold text-4xl w-fit">
+                                        <div
+                                            className={cn(
+                                                "absolute rounded-full radial--blur3 w-32 h-16 -top-5 left-1/2 transform -translate-x-1/2 opacity-50",
+                                            )}
+                                        />
                                         {item.title}
                                     </TextColorGradient>
                                     <Link
