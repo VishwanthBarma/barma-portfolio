@@ -4,7 +4,7 @@ import GlassCard from "../global/glass-card"
 
 const Education = () => {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col px-4">
             <Heading>Education</Heading>
             <GlassCard className="w-min min-w-fit">
                 <div className="flex flex-col space-y-5 w-full text-neutral-300">
@@ -17,7 +17,7 @@ const Education = () => {
                         <h1 className="font-semibold text-sm text-neutral-500">
                             College name
                         </h1>
-                        <h1 className="font-semibold border-[1px] p-2 px-3 rounded-xl w-fit">
+                        <h1 className="font-semibold border-[1px] p-2 px-3 rounded-xl w-fit text-emerald-500">
                             CBIT (Chaitanya Bharathi Institute of Technology)
                         </h1>
                     </div>

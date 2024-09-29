@@ -19,15 +19,17 @@ const NavBar = () => {
     return (
         <div
             className={cn(
-                "fixed top-0 inset-x-0 z-50 bg-black/30 backdrop-blur-md px-6 py-3 pt-5 border-b-2 border-zinc-950 shadow-md shadow-zinc-900/50",
+                "fixed top-0 inset-x-0 z-[110] bg-black/30 backdrop-blur-md px-6 py-3 pt-5 border-b-2 border-zinc-950 shadow-md shadow-zinc-900/50",
             )}
         >
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between container">
                 <Link
                     href={"/"}
-                    className="font-bold text-2xl w-6/12 md:w-2/12 text-emerald-500"
+                    className="font-bold text-2xl w-6/12 md:w-2/12 text-emerald-500 shadow-emerald-500"
                 >
-                    BARMA
+                    <TextColorGradient className="w-fit">
+                        BARMA
+                    </TextColorGradient>
                 </Link>
 
                 <div className="md:hidden flex items-center">
@@ -67,11 +69,11 @@ const NavBar = () => {
                         <FaLinkedin size={20} />
                     </Link>
                     <Image
-                        width={45}
-                        height={45}
+                        width={40}
+                        height={40}
                         src={"/avatar/avatar.jpg"}
                         alt="Barma's Image"
-                        className="rounded-full border-2 border-emerald-500"
+                        className="rounded-full border-2 border-emerald-500 shadow-xl shadow-emerald-500/40"
                     />
                 </div>
             </div>
