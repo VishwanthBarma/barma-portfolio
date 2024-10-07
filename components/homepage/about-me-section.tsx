@@ -25,26 +25,27 @@ const AboutMeSection = () => {
                             />
                         </TextColorGradient>
                         <p className="text-center text-sm sm:text-base lg:text-md text-neutral-400 leading-relaxed">
-                            I’m an experienced Software Engineer with a strong
+                            As a skilled Software Engineer, I have a solid
                             background in software development and web
                             technologies. My hands-on experience includes
                             building scalable applications and working with a
                             range of programming languages, databases, and
                             frameworks like Java, Python, JavaScript,
                             TypeScript, Next.js, React.js, Node.js, and GraphQL.
-                            I’ve led projects such as TicketGalaxy and
-                            ProductsGrid, where I was involved in everything
-                            from design to deployment. I’m eager to use my
-                            skills in both software and web development to
-                            contribute to real-world projects and create
-                            effective, high-quality solutions.
+                            I’ve led projects such as Resume.AI and
+                            ProductsGrid, managing all aspects from design to
+                            deployment. My internship experience further
+                            enhanced my expertise in both software and web
+                            development, and I’m excited to contribute to
+                            real-world projects by creating effective,
+                            high-quality solutions.
                         </p>
                         <Button
                             variant={"outline"}
                             className="mt-4 rounded-full"
                             onClick={() => setShowMore(true)}
                         >
-                            View More
+                            More About Me
                         </Button>
                     </GlassCard>
                 </div>

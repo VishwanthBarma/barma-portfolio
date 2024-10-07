@@ -46,7 +46,7 @@ const ExpandInfo = ({ active, setActive }: Props) => {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="fixed inset-0 bg-black/30 backdrop-blur-md z-[99]"
+                        className="fixed inset-0 bg-neutral-950 z-[99]"
                     />
 
                     <motion.div
@@ -241,7 +241,7 @@ const ExpandInfo = ({ active, setActive }: Props) => {
 
                         <button
                             onClick={() => setActive(false)}
-                            className="absolute top-20 right-5 hover:text-gray-700 font-extrabold text-2xl"
+                            className="absolute top-20 right-5 hover:text-gray-700 text-white font-extrabold text-2xl"
                         >
                             ✕
                         </button>

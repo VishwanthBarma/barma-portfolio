@@ -55,13 +55,13 @@ const ExperiencePage = () => {
                             </TextColorGradient>
 
                             <div className="flex flex-col md:flex-row md:space-x-3 items-center mb-3">
-                                <h1 className="font-bold text-xl">
+                                <h1 className="font-bold text-xl text-neutral-200">
                                     {item.employee}
                                 </h1>
                                 <TextColorGradient className="font-extrabold text-xl">
                                     {item.duration}
                                 </TextColorGradient>
-                                <h1 className="font-semibold">
+                                <h1 className="font-semibold text-neutral-200">
                                     {item.location}
                                 </h1>
                             </div>

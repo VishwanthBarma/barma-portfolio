@@ -51,7 +51,7 @@ const NavBar = () => {
                                     isActive
                                         ? "bg-neutral-950 shadow-md shadow-neutral-950/50"
                                         : "hover:bg-neutral-900 text-neutral-500 hover:text-neutral-400"
-                                } p-2 rounded-lg text-center text-sm font-medium flex items-center space-x-2`}
+                                } p-2 rounded-lg text-center text-neutral-200 text-sm font-medium flex items-center space-x-2`}
                                 href={menuItem.path}
                             >
                                 <span className="mr-1">{menuItem.icon}</span>
@@ -63,10 +63,10 @@ const NavBar = () => {
 
                 <div className="hidden md:flex w-2/12 justify-end items-center space-x-3">
                     <Link href="https://github.com/VishwanthBarma">
-                        <FaGithub size={20} />
+                        <FaGithub size={20} className="text-white" />
                     </Link>
                     <Link href="https://www.linkedin.com/in/vishwanthbarma/">
-                        <FaLinkedin size={20} />
+                        <FaLinkedin size={20} className="text-white" />
                     </Link>
                     <Image
                         width={40}
@@ -92,7 +92,7 @@ const NavBar = () => {
                                     isActive
                                         ? "bg-neutral-950 shadow-md shadow-neutral-950/50"
                                         : "hover:bg-neutral-900 text-neutral-500 hover:text-neutral-400"
-                                } p-2 rounded-lg text-center text-sm font-medium flex items-center space-x-2`}
+                                } p-2 rounded-lg text-neutral-200 text-center text-sm font-medium flex items-center space-x-2`}
                                 href={menuItem.path}
                                 onClick={() => setIsOpen(false)}
                             >
@@ -103,10 +103,10 @@ const NavBar = () => {
                     })}
                     <div className="flex justify-center space-x-3 pt-3 border-t border-neutral-700">
                         <Link href="https://github.com/VishwanthBarma">
-                            <FaGithub size={20} />
+                            <FaGithub size={20} className="text-white" />
                         </Link>
                         <Link href="https://www.linkedin.com/in/vishwanthbarma/">
-                            <FaLinkedin size={20} />
+                            <FaLinkedin size={20} className="text-white" />
                         </Link>
                     </div>
                     <div className="flex justify-center items-center space-x-3 pt-3 border-t border-neutral-700">

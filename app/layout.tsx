@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import { Plus_Jakarta_Sans } from "next/font/google"
 import "./globals.css"
-import { ThemeProvider } from "@/providers/theme-provider"
 import NavBar from "@/components/global/nav-bar"
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] })
@@ -17,22 +16,16 @@ export default function RootLayout({
     children: React.ReactNode
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" className="dark bg-neutral-950">
             <head>
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="apple-touch-icon" href="/favicon.ico" />
             </head>
-            <body className={jakarta.className}>
-                <ThemeProvider
-                    attribute="class"
-                    defaultTheme="dark"
-                    disableTransitionOnChange
-                >
-                    <div className="flex flex-col container">
-                        <NavBar />
-                        <div className="container py-28">{children}</div>
-                    </div>
-                </ThemeProvider>
+            <body className={`${jakarta.className} dark`}>
+                <div className="flex flex-col container">
+                    <NavBar />
+                    <div className="container py-28">{children}</div>
+                </div>
             </body>
         </html>
     )

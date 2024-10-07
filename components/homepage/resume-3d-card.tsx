@@ -6,7 +6,7 @@ import { TypewriterEffectSmooth } from "../global/typewritter-effect"
 const Resume3DCard = () => {
     return (
         <div>
-            <CardContainer className="inter-var w-[24rem] relative group">
+            <CardContainer className="inter-var text-neutral-200 w-[24rem] relative group">
                 <CardBody className="bg-gray-50 relative group/card shadow-2xl shadow-neutral-500/[0.2]  dark:hover:shadow-2xl dark:hover:shadow-neutral-400/[0.2] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-4 border">
                     <span className="absolute top-0 left-[1.125rem] h-[2px] w-[calc(100%-2.25rem)] bg-gradient-to-r from-neutral-400/0 via-white/85 to-neutral-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
                     <span className="absolute opacity-0 bottom-0 left-[1.125rem] h-[2px] w-[calc(100%-2.25rem)] bg-gradient-to-r from-neutral-400/0 via-white/85 to-neutral-400/0 transition-opacity duration-500 group-hover:opacity-100"></span>
