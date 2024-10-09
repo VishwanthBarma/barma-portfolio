@@ -26,7 +26,7 @@ const Education = () => {
                             Degree
                         </h1>
                         <h1 className="font-semibold border-[1px] p-2 px-3 rounded-xl w-fit">
-                            Bachelor of Computer Science
+                            Bachelor of Engineering
                         </h1>
                     </div>
                     <div className="flex flex-col space-y-1">
