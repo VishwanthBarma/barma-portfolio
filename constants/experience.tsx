@@ -9,17 +9,24 @@ export const experience = [
                 <p>
                     • Led the development and deployment of significant upgrades
                     and SEO strategies to the CBIT college website and
-                    e-learning platform (ERP) using WordPress and PHP,
-                    Spearheaded performance optimization techniques, including
-                    the enhancement of multimedia content loading times,
-                    contributing to a more seamless user experience.
+                    e-learning platform (ERP) using WordPress, JavaScript and
+                    PHP, Spearheaded performance optimization techniques,
+                    including the enhancement of multimedia content loading
+                    times.
+                </p>
+
+                <p>
+                    • Engineered user-centric site navigation system,
+                    integrating SEO techniques and plugins to enhance platform
+                    performance and deliver a seamless user experience, adopted
+                    by 10+ teams, significantly improving user satisfaction.
                 </p>
                 <p>
-                    • Engineered user-centric site navigation systems and
-                    optimized multimedia content loading, integrating cloud
-                    technologies to enhance platform performance and deliver a
-                    seamless user experience, adopted by 10+ teams,
-                    significantly improving user satisfaction.
+                    • Collaborated cross-functionally with designers and
+                    developers to enhance user experience and ensure good
+                    website performance and worked in an Agile team,
+                    contributing to sprint planning, code reviews, and
+                    end-to-end ownership of tasks.
                 </p>
             </div>
         ),
